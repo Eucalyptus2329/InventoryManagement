@@ -1,12 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
+
 
 namespace InventoryManagement
 {
@@ -16,34 +10,6 @@ namespace InventoryManagement
         {
             InitializeComponent();
         }
-
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label3_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void UsernameBox_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void PasswordBox_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-
         private void checkBox_CheckedChanged(object sender, EventArgs e)
         {
             if (checkBox.Checked == false)
@@ -52,15 +18,49 @@ namespace InventoryManagement
                 PasswordBox.UseSystemPasswordChar = false;
 
         }
-
-        private void label1_Click_1(object sender, EventArgs e)
+        private void label2_Click_1(object sender, EventArgs e)
         {
-
+            UsernameBox.Clear();
+            PasswordBox.Clear();
+            PasswordBox.Text = "Password";
+            UsernameBox.Text = "Username";
         }
 
-        private void CompanyHeader_Click(object sender, EventArgs e)
+        private void PasswordBoxEnter(object sender, EventArgs e)
         {
+            if(PasswordBox.Text == "Password")
+            {
+                PasswordBox.Text = "";
+            }
+        }
+        private void PasswordBoxLeave(object sender, EventArgs e)
+        {
+            if (PasswordBox.Text == "")
+            {
+                PasswordBox.Text = "Password";
+            }
+        }
+        private void UsernameBoxEnter(object sender, EventArgs e)
+        {
+            if(UsernameBox.Text == "Username") 
+            {
+                UsernameBox.Text = "";
+            }
+        }
+        private void UsernameBoxLeave(object sender, EventArgs e)
+        {
+            if (UsernameBox.Text == "")
+            {
+                UsernameBox.Text = "Username";
+            }
+        }
 
+        private void CloseWindowButton_Click(object sender, EventArgs e)
+        {
+            if(MessageBox.Show("Exit Application","Confirm", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+            {
+                Application.Exit();
+            }
         }
     }
 }
