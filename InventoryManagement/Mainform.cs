@@ -16,20 +16,54 @@ namespace InventoryManagement
         {
             InitializeComponent();
         }
-
-        private void ProductPanel_MouseHover(object sender, EventArgs e)
+        private void ProductButton_MouseHover(object sender, EventArgs e)
         {
-            ProductPanel.BackColor = Color.Turquoise;
+            ProductButton.BackColor = Color.DodgerBlue;
         }
 
-        private void ProductPanel_MouseLeave(object sender, EventArgs e)
+        private void ProductButton_MouseLeave(object sender, EventArgs e)
         {
-            ProductPanel.BackColor = Color.LightSteelBlue;
+            ProductButton.BackColor = Color.MediumTurquoise;
         }
 
-        private void ProductLabel_MouseHover(object sender, EventArgs e)
+        private void CustomerButton_MouseHover(object sender, EventArgs e)
         {
+            CustomerButton.BackColor = Color.DodgerBlue;
+        }
 
+        private void CustomerButton_MouseLeave(object sender, EventArgs e)
+        {
+            CustomerButton.BackColor = Color.MediumTurquoise;
+        }
+
+        private void UserButton_MouseHover(object sender, EventArgs e)
+        {
+            UserButton.BackColor = Color.DodgerBlue;
+        }
+
+        private void UserButton_MouseLeave(object sender, EventArgs e)
+        {
+            UserButton.BackColor = Color.MediumTurquoise;   
+        }
+
+        private void CategoriesButton_MouseHover(object sender, EventArgs e)
+        {
+            CategoriesButton.BackColor = Color.DodgerBlue;  
+        }
+
+        private void CategoriesButton_MouseLeave(object sender, EventArgs e)
+        {
+            CategoriesButton.BackColor = Color.MediumTurquoise;
+        }
+
+        private void OrderButton_MouseHover(object sender, EventArgs e)
+        {
+            OrderButton.BackColor = Color.DodgerBlue;
+        }
+
+        private void OrderButton_MouseLeave(object sender, EventArgs e)
+        {
+            OrderButton.BackColor = Color.MediumTurquoise;
         }
     }
 }
