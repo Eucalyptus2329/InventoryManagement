@@ -1,5 +1,6 @@
 # InventoryManagementSystem
 
+
 -Create flat and modern form.
 
 -Create Side Menu.
@@ -8,7 +9,7 @@
 
 -Create Method to hide the submenu.
 
--Create Method to show the submenu. 
+-Create Method to show the submenu.
 
 -Customize submenu and buttons.
 
@@ -16,11 +17,11 @@
 
 -Open child forms in a panel.
 
--Responsive or adaptable user interface or user controls. 
+-Responsive or adaptable user interface or user controls.
 
--Manage Product(insert form, update and Delete) 
+-Manage Product(insert form, update and Delete)
 
--Manage Category(insert form, update and Delete) 
+-Manage Category(insert form, update and Delete)
 
 -Manage Customer(insert form, update and Delete)
 

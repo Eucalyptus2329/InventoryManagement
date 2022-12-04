@@ -45,24 +45,28 @@
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.CloseWindowButton = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.eventLog1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.CloseWindowButton)).BeginInit();
             this.SuspendLayout();
             // 
             // UsernameBox
             // 
             this.UsernameBox.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.UsernameBox.ForeColor = System.Drawing.Color.LightSeaGreen;
-            this.UsernameBox.Location = new System.Drawing.Point(350, 187);
+            this.UsernameBox.Location = new System.Drawing.Point(350, 184);
+            this.UsernameBox.MinimumSize = new System.Drawing.Size(203, 30);
             this.UsernameBox.Name = "UsernameBox";
             this.UsernameBox.Size = new System.Drawing.Size(203, 23);
             this.UsernameBox.TabIndex = 2;
             this.UsernameBox.Text = "Username";
-            this.UsernameBox.TextChanged += new System.EventHandler(this.UsernameBox_TextChanged);
+            this.UsernameBox.Enter += new System.EventHandler(this.UsernameBoxEnter);
+            this.UsernameBox.Leave += new System.EventHandler(this.UsernameBoxLeave);
             // 
             // button1
             // 
@@ -85,11 +89,13 @@
             this.PasswordBox.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.PasswordBox.ForeColor = System.Drawing.Color.LightSeaGreen;
             this.PasswordBox.Location = new System.Drawing.Point(350, 233);
+            this.PasswordBox.MinimumSize = new System.Drawing.Size(203, 30);
             this.PasswordBox.Name = "PasswordBox";
             this.PasswordBox.Size = new System.Drawing.Size(203, 23);
             this.PasswordBox.TabIndex = 8;
             this.PasswordBox.Text = "Password";
-            this.PasswordBox.TextChanged += new System.EventHandler(this.PasswordBox_TextChanged);
+            this.PasswordBox.Enter += new System.EventHandler(this.PasswordBoxEnter);
+            this.PasswordBox.Leave += new System.EventHandler(this.PasswordBoxLeave);
             // 
             // checkBox
             // 
@@ -113,7 +119,7 @@
             this.label1.Size = new System.Drawing.Size(206, 23);
             this.label1.TabIndex = 0;
             this.label1.Text = "Login To Your Account";
-            this.label1.Click += new System.EventHandler(this.label1_Click_1);
+
             // 
             // label2
             // 
@@ -124,6 +130,7 @@
             this.label2.Size = new System.Drawing.Size(52, 23);
             this.label2.TabIndex = 10;
             this.label2.Text = "Clear";
+            this.label2.Click += new System.EventHandler(this.label2_Click_1);
             // 
             // pictureBox2
             // 
@@ -143,7 +150,7 @@
             this.label3.Size = new System.Drawing.Size(219, 23);
             this.label3.TabIndex = 7;
             this.label3.Text = "Pavillion Management";
-            this.label3.Click += new System.EventHandler(this.label3_Click);
+
             // 
             // panel1
             // 
@@ -176,7 +183,7 @@
             this.CompanyHeader.Size = new System.Drawing.Size(238, 121);
             this.CompanyHeader.TabIndex = 12;
             this.CompanyHeader.Text = "Welcome to Pavillion Management";
-            this.CompanyHeader.Click += new System.EventHandler(this.CompanyHeader_Click);
+
             // 
             // pictureBox3
             // 
@@ -208,12 +215,24 @@
             this.pictureBox4.TabIndex = 14;
             this.pictureBox4.TabStop = false;
             // 
+            // CloseWindowButton
+            // 
+            this.CloseWindowButton.Image = ((System.Drawing.Image)(resources.GetObject("CloseWindowButton.Image")));
+            this.CloseWindowButton.Location = new System.Drawing.Point(569, 0);
+            this.CloseWindowButton.Name = "CloseWindowButton";
+            this.CloseWindowButton.Size = new System.Drawing.Size(26, 22);
+            this.CloseWindowButton.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.CloseWindowButton.TabIndex = 15;
+            this.CloseWindowButton.TabStop = false;
+            this.CloseWindowButton.Click += new System.EventHandler(this.CloseWindowButton_Click);
+            // 
             // LoginForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.ClientSize = new System.Drawing.Size(592, 450);
+            this.Controls.Add(this.CloseWindowButton);
             this.Controls.Add(this.pictureBox4);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label2);
@@ -232,6 +251,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.CloseWindowButton)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -254,6 +274,7 @@
         private System.Windows.Forms.PictureBox pictureBox4;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.PictureBox CloseWindowButton;
     }
 }
 
