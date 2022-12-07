@@ -1,17 +1,10 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 
 namespace InventoryManagement
 {
-    public partial class UserModule : Form
+    public partial class UserModule : Form 
     {
         public UserModule()
         {
@@ -35,9 +28,22 @@ namespace InventoryManagement
             Clear();
         }
 
-        private void SaveButton_Click(object sender, EventArgs e)
+        private void SaveButton_Click(object sender, EventArgs e) 
         {
-            Clear();
+            try
+            {
+                if(MessageBox.Show("Are you sure you want to save this User?","Saving Record",MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.OK)
+                {
+                    DapperDatabase dbhelper = new DapperDatabase();
+                    int Save = dbhelper.Execute();
+                    MessageBox.Show("User has been Successfully Saved");
+                    
+                }
+            }
+            catch(Exception ex) 
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
 
         private void UpdateButton_Click(object sender, EventArgs e)
