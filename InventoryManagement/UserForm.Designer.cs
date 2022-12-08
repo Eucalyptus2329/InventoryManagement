@@ -28,9 +28,14 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            this.components = new System.ComponentModel.Container();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UserForm));
             this.dataGridView = new System.Windows.Forms.DataGridView();
+            this.dapperDatabaseBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.ManageUserLabel = new System.Windows.Forms.Panel();
+            this.ManageLabel = new System.Windows.Forms.Label();
+            this.userBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -38,25 +43,23 @@
             this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column6 = new System.Windows.Forms.DataGridViewImageColumn();
             this.Column7 = new System.Windows.Forms.DataGridViewImageColumn();
-            this.ManageUserLabel = new System.Windows.Forms.Panel();
-            this.ManageLabel = new System.Windows.Forms.Label();
-            this.buttonImageHover1 = new InventoryManagement.ButtonImageHover();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dapperDatabaseBindingSource)).BeginInit();
             this.ManageUserLabel.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.buttonImageHover1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.userBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // dataGridView
             // 
             this.dataGridView.BackgroundColor = System.Drawing.Color.White;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.DodgerBlue;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.Turquoise;
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridView.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.DodgerBlue;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.Turquoise;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.dataGridView.ColumnHeadersHeight = 30;
             this.dataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
             this.dataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -74,6 +77,29 @@
             this.dataGridView.Name = "dataGridView";
             this.dataGridView.Size = new System.Drawing.Size(858, 717);
             this.dataGridView.TabIndex = 0;
+
+            // 
+            // ManageUserLabel
+            // 
+            this.ManageUserLabel.BackColor = System.Drawing.Color.DodgerBlue;
+            this.ManageUserLabel.Controls.Add(this.ManageLabel);
+            this.ManageUserLabel.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.ManageUserLabel.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ManageUserLabel.Location = new System.Drawing.Point(0, 642);
+            this.ManageUserLabel.Name = "ManageUserLabel";
+            this.ManageUserLabel.Size = new System.Drawing.Size(858, 75);
+            this.ManageUserLabel.TabIndex = 1;
+            // 
+            // ManageLabel
+            // 
+            this.ManageLabel.AutoSize = true;
+            this.ManageLabel.ForeColor = System.Drawing.Color.White;
+            this.ManageLabel.Location = new System.Drawing.Point(23, 23);
+            this.ManageLabel.Name = "ManageLabel";
+            this.ManageLabel.Size = new System.Drawing.Size(157, 25);
+            this.ManageLabel.TabIndex = 0;
+            this.ManageLabel.Text = "Manage Users";
+            // 
             // 
             // Column1
             // 
@@ -123,40 +149,6 @@
             this.Column7.ReadOnly = true;
             this.Column7.Visible = false;
             // 
-            // ManageUserLabel
-            // 
-            this.ManageUserLabel.BackColor = System.Drawing.Color.DodgerBlue;
-            this.ManageUserLabel.Controls.Add(this.buttonImageHover1);
-            this.ManageUserLabel.Controls.Add(this.ManageLabel);
-            this.ManageUserLabel.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.ManageUserLabel.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ManageUserLabel.Location = new System.Drawing.Point(0, 642);
-            this.ManageUserLabel.Name = "ManageUserLabel";
-            this.ManageUserLabel.Size = new System.Drawing.Size(858, 75);
-            this.ManageUserLabel.TabIndex = 1;
-            // 
-            // ManageLabel
-            // 
-            this.ManageLabel.AutoSize = true;
-            this.ManageLabel.ForeColor = System.Drawing.Color.White;
-            this.ManageLabel.Location = new System.Drawing.Point(23, 23);
-            this.ManageLabel.Name = "ManageLabel";
-            this.ManageLabel.Size = new System.Drawing.Size(157, 25);
-            this.ManageLabel.TabIndex = 0;
-            this.ManageLabel.Text = "Manage Users";
-            // 
-            // buttonImageHover1
-            // 
-            this.buttonImageHover1.HoverImage = ((System.Drawing.Image)(resources.GetObject("buttonImageHover1.HoverImage")));
-            this.buttonImageHover1.Image = ((System.Drawing.Image)(resources.GetObject("buttonImageHover1.Image")));
-            this.buttonImageHover1.ImageNormal = ((System.Drawing.Image)(resources.GetObject("buttonImageHover1.ImageNormal")));
-            this.buttonImageHover1.Location = new System.Drawing.Point(804, 27);
-            this.buttonImageHover1.Name = "buttonImageHover1";
-            this.buttonImageHover1.Size = new System.Drawing.Size(31, 25);
-            this.buttonImageHover1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.buttonImageHover1.TabIndex = 1;
-            this.buttonImageHover1.TabStop = false;
-            // 
             // UserForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -169,9 +161,10 @@
             this.Name = "UserForm";
             this.Text = "UserForm";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dapperDatabaseBindingSource)).EndInit();
             this.ManageUserLabel.ResumeLayout(false);
             this.ManageUserLabel.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.buttonImageHover1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.userBindingSource)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -179,6 +172,11 @@
         #endregion
 
         private System.Windows.Forms.DataGridView dataGridView;
+        private System.Windows.Forms.Panel ManageUserLabel;
+        private System.Windows.Forms.Label ManageLabel;
+        private ButtonImageHover buttonImageHover1;
+        private System.Windows.Forms.BindingSource dapperDatabaseBindingSource;
+        private System.Windows.Forms.BindingSource userBindingSource;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
@@ -186,8 +184,5 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Column5;
         private System.Windows.Forms.DataGridViewImageColumn Column6;
         private System.Windows.Forms.DataGridViewImageColumn Column7;
-        private System.Windows.Forms.Panel ManageUserLabel;
-        private System.Windows.Forms.Label ManageLabel;
-        private ButtonImageHover buttonImageHover1;
     }
 }

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Dapper;
+using System;
 using System.Windows.Forms;
 
 
@@ -17,7 +18,6 @@ namespace InventoryManagement
             FullNameTxt.Clear();
             PhoneNumberTxt.Clear();
         }
-
         private void CloseWindowButton_Click(object sender, EventArgs e)
         {
             this.Dispose();
@@ -27,27 +27,61 @@ namespace InventoryManagement
         {
             Clear();
         }
-
-        private void SaveButton_Click(object sender, EventArgs e) 
+        private void SaveButton_Click(object sender, EventArgs e)
         {
             try
             {
-                if(MessageBox.Show("Are you sure you want to save this User?","Saving Record",MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.OK)
+                User user = new User();
+                if (MessageBox.Show("Are you sure you want to save this User?", "Saving Record", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.OK)
                 {
-                    DapperDatabase dbhelper = new DapperDatabase();
-                    int Save = dbhelper.Execute();
-                    MessageBox.Show("User has been Successfully Saved");
-                    
+                    {
+                        string spName = "dbo.SpUserFormDb";
+                        DynamicParameters para = new DynamicParameters();
+                        para.AddDynamicParams
+                            (
+                            new
+                            {
+                                id = 1,
+                                Username = user.Username,
+                                Password = user.Password,
+                                Fullname = user.Fullname,
+                                PhoneNumber = user.PhoneNumber
+                            });
+                        //Insert Function
+                        DapperDatabase dbhelper = new DapperDatabase();
+                        int InsertQueyry = dbhelper.Execute(spName,para);
+                        Clear();
+                    }
                 }
             }
-            catch(Exception ex) 
+            catch (Exception ex)
             {
                 MessageBox.Show(ex.Message);
-            }
+            }        
         }
-
         private void UpdateButton_Click(object sender, EventArgs e)
         {
+            if (MessageBox.Show("Are you sure you want to update this User?", "Saving Record", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.OK)
+            {
+                {
+                    User user = new User();
+                    string spName = "dbo.SpUserFormDb";
+                    DynamicParameters para = new DynamicParameters();
+                    para.AddDynamicParams
+                        (
+                        new
+                        {
+                            id = 2,
+                            Username = user.Username,
+                            Password = user.Password,
+                            Fullname = user.Fullname,
+                            PhoneNumber = user.PhoneNumber
+                        });
+                    //Insert Function
+                    DapperDatabase dbhelper = new DapperDatabase();
+                    int InsertQueyry = dbhelper.Execute(spName, para);
+                }
+            }
             Clear();
         }
     }

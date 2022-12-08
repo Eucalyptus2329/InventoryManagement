@@ -160,38 +160,10 @@
         PmcLv/xRnsghdSmVvjZE5S82Uelfb0ilH4chlX6+slT2gf07jP0AB4NsCQxqi7cAAAAASUVORK5CYII=
 </value>
   </data>
-  <data name="buttonImageHover1.HoverImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAADvSURBVDhPvZRLCsIwFEXbKoIj6xacVpw49AOOrAsTQdyeE8GJBT+4Akf1vuS2RkmbItEDB+Tm
-        5dJATPBX8jyP4BAuqPyOuNwcbOrDHbzBTyTbwpjj9WBwzk0uLnDKbXYwMIMPmW6IzE64/R0sxPAqUxb2
-        1MYZ9ljzAuFGLdtJaBVr1mgQtOFdLdlxFcrJWqxThSMVV+MqFBLWqcJUZyUHODDsUDOTGZMl61ThSmcl
-        Rzg27FIzkxmTlHW/OXIIMxXbcRWeYMg6DQJ/10ZAWHex5eurTmC/2AIW/P31CjDg73EowKC/58sEm/w8
-        sN8TBE/LtbwvTwAYXwAAAABJRU5ErkJggg==
-</value>
-  </data>
-  <data name="buttonImageHover1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAGGSURBVDhP1ZQxKERxHMcPpVsuYkIGC7Y7RoNsBpOyWmQ5k8VlUSYhm7OdQRlkk4kJy11YUKJc
-        lEgWEwPp+fy873v88965SfnUZ/h9f7/36/3/97rEn+F5XhpncAN3cQ0nsE0j1cEDXbiD71jCZZzHAl7h
-        K65gSo/Ew9AAPuEWdip2IB/CMp5hq+Kf0LQ3s2VLWKM4EvqNuI9HmFTsQsOOuY3OMmp7a09lCFEz3mFO
-        0ReEPWh31q0ohCxyoUGcxUesU+RDMItFlQ7klRba0e1H6lfkQ7CJeZXBksBJNL5nGY3a7DlmVfoQ2P3N
-        qbT6N/Y0arNFnFbpQ7COqyodyO2NIo9s0LrGMZU+BHasskoH8tiFxB3Wg7QiH4J2tMsdVBRCVmnhIl6q
-        dKGRR7vgBkWfUGcwvLMAsl58wRFFLjRSeIoH2KQ4Evr23d5jQVE0DLTgId6ifbTOYmq7swV8RvuzqFcr
-        HoaSOIUP+IYXeIw3aJzgsMarh4dqsQ/HMYejGPkP9J9IJD4APuP8dkmk3nMAAAAASUVORK5CYII=
-</value>
-  </data>
-  <data name="buttonImageHover1.ImageNormal" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAGGSURBVDhP1ZQxKERxHMcPpVsuYkIGC7Y7RoNsBpOyWmQ5k8VlUSYhm7OdQRlkk4kJy11YUKJc
-        lEgWEwPp+fy873v88965SfnUZ/h9f7/36/3/97rEn+F5XhpncAN3cQ0nsE0j1cEDXbiD71jCZZzHAl7h
-        K65gSo/Ew9AAPuEWdip2IB/CMp5hq+Kf0LQ3s2VLWKM4EvqNuI9HmFTsQsOOuY3OMmp7a09lCFEz3mFO
-        0ReEPWh31q0ohCxyoUGcxUesU+RDMItFlQ7klRba0e1H6lfkQ7CJeZXBksBJNL5nGY3a7DlmVfoQ2P3N
-        qbT6N/Y0arNFnFbpQ7COqyodyO2NIo9s0LrGMZU+BHasskoH8tiFxB3Wg7QiH4J2tMsdVBRCVmnhIl6q
-        dKGRR7vgBkWfUGcwvLMAsl58wRFFLjRSeIoH2KQ4Evr23d5jQVE0DLTgId6ifbTOYmq7swV8RvuzqFcr
-        HoaSOIUP+IYXeIw3aJzgsMarh4dqsQ/HMYejGPkP9J9IJD4APuP8dkmk3nMAAAAASUVORK5CYII=
-</value>
-  </data>
+  <metadata name="dapperDatabaseBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
+  <metadata name="userBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>237, 17</value>
+  </metadata>
 </root>
