@@ -36,13 +36,15 @@
             this.PasswordLabel = new System.Windows.Forms.Label();
             this.FullNameLabel = new System.Windows.Forms.Label();
             this.PhoneNumberLabel = new System.Windows.Forms.Label();
-            this.UsernameTxt = new System.Windows.Forms.TextBox();
-            this.PasswordTxt = new System.Windows.Forms.TextBox();
-            this.FullNameTxt = new System.Windows.Forms.TextBox();
-            this.PhoneNumberTxt = new System.Windows.Forms.TextBox();
+            this.UsernameTxtBox = new System.Windows.Forms.TextBox();
+            this.PasswordTxtBox = new System.Windows.Forms.TextBox();
+            this.FullNameTxtBox = new System.Windows.Forms.TextBox();
+            this.PhoneNumberTxtBox = new System.Windows.Forms.TextBox();
             this.SaveButton = new System.Windows.Forms.Button();
             this.UpdateButton = new System.Windows.Forms.Button();
             this.ClearButton = new System.Windows.Forms.Button();
+            this.RetypePasswordBox = new System.Windows.Forms.TextBox();
+            this.RetypePasswordLabel = new System.Windows.Forms.Label();
             this.HeaderPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.CloseWindowButton)).BeginInit();
             this.SuspendLayout();
@@ -61,10 +63,11 @@
             // 
             // CloseWindowButton
             // 
+            this.CloseWindowButton.Cursor = System.Windows.Forms.Cursors.Hand;
             this.CloseWindowButton.Image = ((System.Drawing.Image)(resources.GetObject("CloseWindowButton.Image")));
-            this.CloseWindowButton.Location = new System.Drawing.Point(556, 3);
+            this.CloseWindowButton.Location = new System.Drawing.Point(559, 3);
             this.CloseWindowButton.Name = "CloseWindowButton";
-            this.CloseWindowButton.Size = new System.Drawing.Size(26, 22);
+            this.CloseWindowButton.Size = new System.Drawing.Size(23, 20);
             this.CloseWindowButton.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.CloseWindowButton.TabIndex = 16;
             this.CloseWindowButton.TabStop = false;
@@ -97,7 +100,7 @@
             // 
             this.PasswordLabel.AutoSize = true;
             this.PasswordLabel.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.PasswordLabel.Location = new System.Drawing.Point(79, 191);
+            this.PasswordLabel.Location = new System.Drawing.Point(79, 187);
             this.PasswordLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.PasswordLabel.Name = "PasswordLabel";
             this.PasswordLabel.Size = new System.Drawing.Size(83, 20);
@@ -108,7 +111,7 @@
             // 
             this.FullNameLabel.AutoSize = true;
             this.FullNameLabel.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.FullNameLabel.Location = new System.Drawing.Point(79, 240);
+            this.FullNameLabel.Location = new System.Drawing.Point(79, 274);
             this.FullNameLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.FullNameLabel.Name = "FullNameLabel";
             this.FullNameLabel.Size = new System.Drawing.Size(83, 20);
@@ -119,52 +122,51 @@
             // 
             this.PhoneNumberLabel.AutoSize = true;
             this.PhoneNumberLabel.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.PhoneNumberLabel.Location = new System.Drawing.Point(34, 289);
+            this.PhoneNumberLabel.Location = new System.Drawing.Point(40, 317);
             this.PhoneNumberLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.PhoneNumberLabel.Name = "PhoneNumberLabel";
             this.PhoneNumberLabel.Size = new System.Drawing.Size(122, 20);
             this.PhoneNumberLabel.TabIndex = 4;
             this.PhoneNumberLabel.Text = "Phone Number:";
             // 
-            // UsernameTxt
+            // UsernameTxtBox
             // 
-            this.UsernameTxt.Location = new System.Drawing.Point(195, 144);
-            this.UsernameTxt.Margin = new System.Windows.Forms.Padding(4);
-            this.UsernameTxt.Name = "UsernameTxt";
-            this.UsernameTxt.Size = new System.Drawing.Size(305, 21);
-            this.UsernameTxt.TabIndex = 5;
+            this.UsernameTxtBox.Location = new System.Drawing.Point(195, 144);
+            this.UsernameTxtBox.Margin = new System.Windows.Forms.Padding(4);
+            this.UsernameTxtBox.Name = "UsernameTxtBox";
+            this.UsernameTxtBox.Size = new System.Drawing.Size(305, 21);
+            this.UsernameTxtBox.TabIndex = 5;
             // 
-            // PasswordTxt
+            // PasswordTxtBox
             // 
-            this.PasswordTxt.Location = new System.Drawing.Point(195, 194);
-            this.PasswordTxt.Margin = new System.Windows.Forms.Padding(4);
-            this.PasswordTxt.Name = "PasswordTxt";
-            this.PasswordTxt.Size = new System.Drawing.Size(305, 21);
-            this.PasswordTxt.TabIndex = 6;
+            this.PasswordTxtBox.Location = new System.Drawing.Point(195, 187);
+            this.PasswordTxtBox.Margin = new System.Windows.Forms.Padding(4);
+            this.PasswordTxtBox.Name = "PasswordTxtBox";
+            this.PasswordTxtBox.Size = new System.Drawing.Size(305, 21);
+            this.PasswordTxtBox.TabIndex = 6;
             // 
-            // FullNameTxt
+            // FullNameTxtBox
             // 
-            this.FullNameTxt.Location = new System.Drawing.Point(195, 242);
-            this.FullNameTxt.Margin = new System.Windows.Forms.Padding(4);
-            this.FullNameTxt.Name = "FullNameTxt";
-            this.FullNameTxt.Size = new System.Drawing.Size(305, 21);
-            this.FullNameTxt.TabIndex = 7;
+            this.FullNameTxtBox.Location = new System.Drawing.Point(195, 273);
+            this.FullNameTxtBox.Margin = new System.Windows.Forms.Padding(4);
+            this.FullNameTxtBox.Name = "FullNameTxtBox";
+            this.FullNameTxtBox.Size = new System.Drawing.Size(305, 21);
+            this.FullNameTxtBox.TabIndex = 7;
             // 
-            // PhoneNumberTxt
+            // PhoneNumberTxtBox
             // 
-            this.PhoneNumberTxt.Location = new System.Drawing.Point(195, 289);
-            this.PhoneNumberTxt.Margin = new System.Windows.Forms.Padding(4);
-            this.PhoneNumberTxt.Name = "PhoneNumberTxt";
-            this.PhoneNumberTxt.Size = new System.Drawing.Size(305, 21);
-            this.PhoneNumberTxt.TabIndex = 8;
+            this.PhoneNumberTxtBox.Location = new System.Drawing.Point(195, 316);
+            this.PhoneNumberTxtBox.Margin = new System.Windows.Forms.Padding(4);
+            this.PhoneNumberTxtBox.Name = "PhoneNumberTxtBox";
+            this.PhoneNumberTxtBox.Size = new System.Drawing.Size(305, 21);
+            this.PhoneNumberTxtBox.TabIndex = 8;
             // 
             // SaveButton
             // 
             this.SaveButton.BackColor = System.Drawing.Color.MediumAquamarine;
-            this.SaveButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.SaveButton.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.SaveButton.ForeColor = System.Drawing.Color.White;
-            this.SaveButton.Location = new System.Drawing.Point(195, 354);
+            this.SaveButton.Location = new System.Drawing.Point(195, 364);
             this.SaveButton.Margin = new System.Windows.Forms.Padding(4);
             this.SaveButton.Name = "SaveButton";
             this.SaveButton.Size = new System.Drawing.Size(88, 28);
@@ -176,10 +178,9 @@
             // UpdateButton
             // 
             this.UpdateButton.BackColor = System.Drawing.Color.SkyBlue;
-            this.UpdateButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.UpdateButton.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.UpdateButton.ForeColor = System.Drawing.Color.White;
-            this.UpdateButton.Location = new System.Drawing.Point(307, 354);
+            this.UpdateButton.Location = new System.Drawing.Point(307, 364);
             this.UpdateButton.Margin = new System.Windows.Forms.Padding(4);
             this.UpdateButton.Name = "UpdateButton";
             this.UpdateButton.Size = new System.Drawing.Size(88, 28);
@@ -191,10 +192,9 @@
             // ClearButton
             // 
             this.ClearButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            this.ClearButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.ClearButton.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ClearButton.ForeColor = System.Drawing.Color.White;
-            this.ClearButton.Location = new System.Drawing.Point(413, 354);
+            this.ClearButton.Location = new System.Drawing.Point(413, 364);
             this.ClearButton.Margin = new System.Windows.Forms.Padding(4);
             this.ClearButton.Name = "ClearButton";
             this.ClearButton.Size = new System.Drawing.Size(88, 28);
@@ -203,18 +203,39 @@
             this.ClearButton.UseVisualStyleBackColor = false;
             this.ClearButton.Click += new System.EventHandler(this.ClearButton_Click);
             // 
+            // RetypePasswordBox
+            // 
+            this.RetypePasswordBox.Location = new System.Drawing.Point(195, 230);
+            this.RetypePasswordBox.Margin = new System.Windows.Forms.Padding(4);
+            this.RetypePasswordBox.Name = "RetypePasswordBox";
+            this.RetypePasswordBox.Size = new System.Drawing.Size(305, 21);
+            this.RetypePasswordBox.TabIndex = 13;
+            // 
+            // RetypePasswordLabel
+            // 
+            this.RetypePasswordLabel.AutoSize = true;
+            this.RetypePasswordLabel.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.RetypePasswordLabel.Location = new System.Drawing.Point(23, 230);
+            this.RetypePasswordLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.RetypePasswordLabel.Name = "RetypePasswordLabel";
+            this.RetypePasswordLabel.Size = new System.Drawing.Size(139, 20);
+            this.RetypePasswordLabel.TabIndex = 12;
+            this.RetypePasswordLabel.Text = "Retype Password:";
+            // 
             // UserModule
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(582, 414);
+            this.Controls.Add(this.RetypePasswordBox);
+            this.Controls.Add(this.RetypePasswordLabel);
             this.Controls.Add(this.ClearButton);
             this.Controls.Add(this.UpdateButton);
             this.Controls.Add(this.SaveButton);
-            this.Controls.Add(this.PhoneNumberTxt);
-            this.Controls.Add(this.FullNameTxt);
-            this.Controls.Add(this.PasswordTxt);
-            this.Controls.Add(this.UsernameTxt);
+            this.Controls.Add(this.PhoneNumberTxtBox);
+            this.Controls.Add(this.FullNameTxtBox);
+            this.Controls.Add(this.PasswordTxtBox);
+            this.Controls.Add(this.UsernameTxtBox);
             this.Controls.Add(this.PhoneNumberLabel);
             this.Controls.Add(this.FullNameLabel);
             this.Controls.Add(this.PasswordLabel);
@@ -240,13 +261,15 @@
         private System.Windows.Forms.Label PasswordLabel;
         private System.Windows.Forms.Label FullNameLabel;
         private System.Windows.Forms.Label PhoneNumberLabel;
-        private System.Windows.Forms.TextBox UsernameTxt;
-        private System.Windows.Forms.TextBox PasswordTxt;
-        private System.Windows.Forms.TextBox FullNameTxt;
-        private System.Windows.Forms.TextBox PhoneNumberTxt;
-        private System.Windows.Forms.Button SaveButton;
-        private System.Windows.Forms.Button UpdateButton;
-        private System.Windows.Forms.Button ClearButton;
         private System.Windows.Forms.PictureBox CloseWindowButton;
+        public System.Windows.Forms.Button SaveButton;
+        public System.Windows.Forms.Button UpdateButton;
+        public System.Windows.Forms.Button ClearButton;
+        public System.Windows.Forms.TextBox PasswordTxtBox;
+        public System.Windows.Forms.TextBox FullNameTxtBox;
+        public System.Windows.Forms.TextBox PhoneNumberTxtBox;
+        internal System.Windows.Forms.TextBox UsernameTxtBox;
+        public System.Windows.Forms.TextBox RetypePasswordBox;
+        private System.Windows.Forms.Label RetypePasswordLabel;
     }
 }

@@ -1,11 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace InventoryManagement
@@ -16,6 +10,28 @@ namespace InventoryManagement
         {
             InitializeComponent();
         }
+        //To Show Sub Form in Main Form
+        private Form activeForm = null;
+        private void openChildform(Form childform)
+        {
+            if(activeForm != null) 
+                activeForm.Close();
+            activeForm = childform;
+            childform.TopLevel = false;
+            childform.FormBorderStyle= FormBorderStyle.None;
+            childform.Dock = DockStyle.Fill;
+            FormPanel.Controls.Add(childform);
+            FormPanel.Tag= childform;
+            childform.BringToFront();  // BringToFront() -> front of the z-order
+            childform.Show();
+        }
+        
+        private void UserButton_Click(object sender, EventArgs e)
+        {
+            openChildform(new UserForm());
+        }
+
+        //Add Background Transition When Hovering 
         private void ProductButton_MouseHover(object sender, EventArgs e)
         {
             ProductButton.BackColor = Color.DodgerBlue;
@@ -65,5 +81,7 @@ namespace InventoryManagement
         {
             OrderButton.BackColor = Color.MediumTurquoise;
         }
+
+       
     }
 }

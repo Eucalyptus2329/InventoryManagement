@@ -77,7 +77,6 @@
     <Compile Include="ButtonImageHover.Designer.cs">
       <DependentUpon>ButtonImageHover.cs</DependentUpon>
     </Compile>
-    <Compile Include="DapperDatabase.cs" />
     <Compile Include="LoginForm.cs">
       <SubType>Form</SubType>
     </Compile>
