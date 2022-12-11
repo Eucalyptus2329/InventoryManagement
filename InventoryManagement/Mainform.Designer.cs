@@ -177,6 +177,7 @@
             this.CustomerButton.TabIndex = 25;
             this.CustomerButton.Text = "Customers";
             this.CustomerButton.UseVisualStyleBackColor = false;
+            this.CustomerButton.Click += new System.EventHandler(this.CustomerButton_Click);
             this.CustomerButton.MouseLeave += new System.EventHandler(this.CustomerButton_MouseLeave);
             this.CustomerButton.MouseHover += new System.EventHandler(this.CustomerButton_MouseHover);
             // 

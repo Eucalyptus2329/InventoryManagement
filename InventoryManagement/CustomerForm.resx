@@ -120,13 +120,13 @@
   <metadata name="Column1.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
-  <metadata name="FullName.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+  <metadata name="CustomerID.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
-  <metadata name="Column3.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+  <metadata name="CustomerName.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
-  <metadata name="Column5.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+  <metadata name="PhoneNumber.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
   <metadata name="Edit.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
@@ -180,18 +180,6 @@
 </value>
   </data>
   <data name="AddButton.ImageNormal" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAABGdBTUEAALGPC/xhBQAAAYZJREFUOE/V
-        lDEoRHEcxw+lWy5iQgYLtjtGg2wGk7JaZDmTxWVRJiGbs51BGWSTiQnLXVhQolyUSBYTA+n5/Lzve/zz
-        3rlJ+dRn+H1/v/fr/f/3usSf4XleGmdwA3dxDSewTSPVwQNduIPvWMJlnMcCXuErrmBKj8TD0AA+4RZ2
-        KnYgH8IynmGr4p/QtDezZUtYozgS+o24j0eYVOxCw465jc4yantrT2UIUTPeYU7RF4Q9aHfWrSiELHKh
-        QZzFR6xT5EMwi0WVDuSVFtrR7UfqV+RDsIl5lcGSwEk0vmcZjdrsOWZV+hDY/c2ptPo39jRqs0WcVulD
-        sI6rKh3I7Y0ij2zQusYxlT4EdqyySgfy2IXEHdaDtCIfgna0yx1UFEJWaeEiXqp0oZFHu+AGRZ9QZzC8
-        swCyXnzBEUUuNFJ4igfYpDgS+vbd3mNBUTQMtOAh3qJ9tM5iaruzBXxG+7OoVysehpI4hQ/4hhd4jDdo
-        nOCwxquHh2qxD8cxh6MY+Q/0n0gkPgA+4/x2SaTecwAAAABJRU5ErkJggg==
-</value>
-  </data>
-  <data name="AddButton.InitialImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAABGdBTUEAALGPC/xhBQAAAYZJREFUOE/V
         lDEoRHEcxw+lWy5iQgYLtjtGg2wGk7JaZDmTxWVRJiGbs51BGWSTiQnLXVhQolyUSBYTA+n5/Lzve/zz

@@ -30,6 +30,10 @@ namespace InventoryManagement
         {
             openChildform(new UserForm());
         }
+        private void CustomerButton_Click(object sender, EventArgs e)
+        {
+            openChildform(new CustomerForm());
+        }
 
         //Add Background Transition When Hovering 
         private void ProductButton_MouseHover(object sender, EventArgs e)
@@ -82,6 +86,6 @@ namespace InventoryManagement
             OrderButton.BackColor = Color.MediumTurquoise;
         }
 
-       
+        
     }
 }

@@ -7,7 +7,6 @@ namespace InventoryManagement
 {
     public partial class UserModule : Form 
     {
-        public string UserConnectionString { get; set; }
         SqlConnection connection = new SqlConnection("Data Source=EULIX-LAPTOP;Initial Catalog=PavillionManagement;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False");
         SqlCommand CM = new SqlCommand();
         public UserModule()
@@ -91,7 +90,7 @@ namespace InventoryManagement
                     connection.Open();
                     CM.ExecuteNonQuery();
                     connection.Close();
-                    MessageBox.Show("User has been successfully updated.");
+                    MessageBox.Show("User has been successfully updated");
                     this.Dispose();
                 }
             }
