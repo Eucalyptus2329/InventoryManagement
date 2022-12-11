@@ -258,6 +258,7 @@
             this.Controls.Add(this.CustomerButton);
             this.Controls.Add(this.FormPanel);
             this.Controls.Add(this.LowerPanel);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Mainform";
             this.Text = "Mainform";
             ((System.ComponentModel.ISupportInitialize)(this.OrderImage)).EndInit();
