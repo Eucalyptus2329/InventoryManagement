@@ -25,16 +25,6 @@ namespace InventoryManagement
             childform.BringToFront();  // BringToFront() -> front of the z-order
             childform.Show();
         }
-        
-        private void UserButton_Click(object sender, EventArgs e)
-        {
-            openChildform(new UserForm());
-        }
-        private void CustomerButton_Click(object sender, EventArgs e)
-        {
-            openChildform(new CustomerForm());
-        }
-
         //Add Background Transition When Hovering 
         private void ProductButton_MouseHover(object sender, EventArgs e)
         {
@@ -85,7 +75,27 @@ namespace InventoryManagement
         {
             OrderButton.BackColor = Color.MediumTurquoise;
         }
+        private void UserButton_Click(object sender, EventArgs e)
+        {
+            openChildform(new UserForm());
+        }
+        private void CustomerButton_Click(object sender, EventArgs e)
+        {
+            openChildform(new CustomerForm());
+        }
+        private void ProductButton_Click(object sender, EventArgs e)
+        {
+            //openChildform(new ProductForm());
+        }
 
-        
+        private void CategoriesButton_Click(object sender, EventArgs e)
+        {
+            openChildform(new CategoryForm());
+        }
+
+        private void OrderButton_Click(object sender, EventArgs e)
+        {
+            //openChildform(new OrderForm());
+        }
     }
 }

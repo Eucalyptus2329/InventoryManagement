@@ -159,6 +159,7 @@
             this.ProductButton.TabIndex = 0;
             this.ProductButton.Text = "Product";
             this.ProductButton.UseVisualStyleBackColor = false;
+            this.ProductButton.Click += new System.EventHandler(this.ProductButton_Click);
             this.ProductButton.MouseLeave += new System.EventHandler(this.ProductButton_MouseLeave);
             this.ProductButton.MouseHover += new System.EventHandler(this.ProductButton_MouseHover);
             // 
@@ -215,6 +216,7 @@
             this.CategoriesButton.TabIndex = 23;
             this.CategoriesButton.Text = "Categories";
             this.CategoriesButton.UseVisualStyleBackColor = false;
+            this.CategoriesButton.Click += new System.EventHandler(this.CategoriesButton_Click);
             this.CategoriesButton.MouseLeave += new System.EventHandler(this.CategoriesButton_MouseLeave);
             this.CategoriesButton.MouseHover += new System.EventHandler(this.CategoriesButton_MouseHover);
             // 
@@ -233,6 +235,7 @@
             this.OrderButton.TabIndex = 27;
             this.OrderButton.Text = "Orders";
             this.OrderButton.UseVisualStyleBackColor = false;
+            this.OrderButton.Click += new System.EventHandler(this.OrderButton_Click);
             this.OrderButton.MouseLeave += new System.EventHandler(this.OrderButton_MouseLeave);
             this.OrderButton.MouseHover += new System.EventHandler(this.OrderButton_MouseHover);
             // 
