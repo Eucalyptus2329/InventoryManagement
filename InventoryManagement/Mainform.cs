@@ -85,7 +85,7 @@ namespace InventoryManagement
         }
         private void ProductButton_Click(object sender, EventArgs e)
         {
-            //openChildform(new ProductForm());
+            openChildform(new ProductForm());
         }
 
         private void CategoriesButton_Click(object sender, EventArgs e)
