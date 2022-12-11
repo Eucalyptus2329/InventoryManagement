@@ -89,7 +89,7 @@
             this.ClearButton.Margin = new System.Windows.Forms.Padding(4);
             this.ClearButton.Name = "ClearButton";
             this.ClearButton.Size = new System.Drawing.Size(88, 28);
-            this.ClearButton.TabIndex = 24;
+            this.ClearButton.TabIndex = 23;
             this.ClearButton.Text = "Clear";
             this.ClearButton.UseVisualStyleBackColor = false;
             this.ClearButton.Click += new System.EventHandler(this.ClearButton_Click);
@@ -103,7 +103,7 @@
             this.UpdateButton.Margin = new System.Windows.Forms.Padding(4);
             this.UpdateButton.Name = "UpdateButton";
             this.UpdateButton.Size = new System.Drawing.Size(88, 28);
-            this.UpdateButton.TabIndex = 23;
+            this.UpdateButton.TabIndex = 22;
             this.UpdateButton.Text = "Update";
             this.UpdateButton.UseVisualStyleBackColor = false;
             this.UpdateButton.Click += new System.EventHandler(this.UpdateButton_Click);
@@ -117,25 +117,27 @@
             this.SaveButton.Margin = new System.Windows.Forms.Padding(4);
             this.SaveButton.Name = "SaveButton";
             this.SaveButton.Size = new System.Drawing.Size(88, 28);
-            this.SaveButton.TabIndex = 22;
+            this.SaveButton.TabIndex = 21;
             this.SaveButton.Text = "Save";
             this.SaveButton.UseVisualStyleBackColor = false;
             this.SaveButton.Click += new System.EventHandler(this.SaveButton_Click);
             // 
             // PhoneNumberTxtBox
             // 
+            this.PhoneNumberTxtBox.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.PhoneNumberTxtBox.Location = new System.Drawing.Point(197, 186);
             this.PhoneNumberTxtBox.Margin = new System.Windows.Forms.Padding(4);
             this.PhoneNumberTxtBox.Name = "PhoneNumberTxtBox";
-            this.PhoneNumberTxtBox.Size = new System.Drawing.Size(305, 22);
-            this.PhoneNumberTxtBox.TabIndex = 21;
+            this.PhoneNumberTxtBox.Size = new System.Drawing.Size(305, 23);
+            this.PhoneNumberTxtBox.TabIndex = 20;
             // 
             // CustomerNameTxtBox
             // 
+            this.CustomerNameTxtBox.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.CustomerNameTxtBox.Location = new System.Drawing.Point(197, 140);
             this.CustomerNameTxtBox.Margin = new System.Windows.Forms.Padding(4);
             this.CustomerNameTxtBox.Name = "CustomerNameTxtBox";
-            this.CustomerNameTxtBox.Size = new System.Drawing.Size(305, 22);
+            this.CustomerNameTxtBox.Size = new System.Drawing.Size(305, 23);
             this.CustomerNameTxtBox.TabIndex = 19;
             // 
             // PhoneNumberLabel

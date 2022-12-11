@@ -39,6 +39,7 @@
             this.ProductQuanitity = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ProductPrice = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ProductDescription = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Category = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Edit = new System.Windows.Forms.DataGridViewImageColumn();
             this.Delete = new System.Windows.Forms.DataGridViewImageColumn();
             this.BottomPanel = new System.Windows.Forms.Panel();
@@ -70,6 +71,7 @@
             this.ProductQuanitity,
             this.ProductPrice,
             this.ProductDescription,
+            this.Category,
             this.Edit,
             this.Delete});
             this.dataGridViewProduct.Cursor = System.Windows.Forms.Cursors.Default;
@@ -97,6 +99,7 @@
             this.dataGridViewProduct.RowHeadersVisible = false;
             this.dataGridViewProduct.Size = new System.Drawing.Size(762, 483);
             this.dataGridViewProduct.TabIndex = 2;
+            this.dataGridViewProduct.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewProduct_CellContentClick);
             this.dataGridViewProduct.CellMouseMove += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dataGridViewProduct_CellMouseMove);
             // 
             // Column1
@@ -140,6 +143,13 @@
             this.ProductDescription.HeaderText = "Product Description";
             this.ProductDescription.Name = "ProductDescription";
             this.ProductDescription.Width = 158;
+            // 
+            // Category
+            // 
+            this.Category.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.Category.HeaderText = "Category";
+            this.Category.Name = "Category";
+            this.Category.Width = 93;
             // 
             // Edit
             // 
@@ -216,16 +226,17 @@
         #endregion
 
         private System.Windows.Forms.DataGridView dataGridViewProduct;
+        private System.Windows.Forms.Panel BottomPanel;
+        private ButtonImageHover AddButton;
+        private System.Windows.Forms.Label ProductLabel;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
         private System.Windows.Forms.DataGridViewTextBoxColumn ProductID;
         private System.Windows.Forms.DataGridViewTextBoxColumn ProductName;
         private System.Windows.Forms.DataGridViewTextBoxColumn ProductQuanitity;
         private System.Windows.Forms.DataGridViewTextBoxColumn ProductPrice;
         private System.Windows.Forms.DataGridViewTextBoxColumn ProductDescription;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Category;
         private System.Windows.Forms.DataGridViewImageColumn Edit;
         private System.Windows.Forms.DataGridViewImageColumn Delete;
-        private System.Windows.Forms.Panel BottomPanel;
-        private ButtonImageHover AddButton;
-        private System.Windows.Forms.Label ProductLabel;
     }
 }

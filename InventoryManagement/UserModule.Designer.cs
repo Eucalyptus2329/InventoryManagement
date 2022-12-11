@@ -131,35 +131,39 @@
             // 
             // UsernameTxtBox
             // 
+            this.UsernameTxtBox.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.UsernameTxtBox.Location = new System.Drawing.Point(195, 144);
             this.UsernameTxtBox.Margin = new System.Windows.Forms.Padding(4);
             this.UsernameTxtBox.Name = "UsernameTxtBox";
-            this.UsernameTxtBox.Size = new System.Drawing.Size(305, 21);
+            this.UsernameTxtBox.Size = new System.Drawing.Size(305, 23);
             this.UsernameTxtBox.TabIndex = 5;
             // 
             // PasswordTxtBox
             // 
+            this.PasswordTxtBox.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.PasswordTxtBox.Location = new System.Drawing.Point(195, 187);
             this.PasswordTxtBox.Margin = new System.Windows.Forms.Padding(4);
             this.PasswordTxtBox.Name = "PasswordTxtBox";
-            this.PasswordTxtBox.Size = new System.Drawing.Size(305, 21);
+            this.PasswordTxtBox.Size = new System.Drawing.Size(305, 23);
             this.PasswordTxtBox.TabIndex = 6;
             // 
             // FullNameTxtBox
             // 
+            this.FullNameTxtBox.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FullNameTxtBox.Location = new System.Drawing.Point(195, 273);
             this.FullNameTxtBox.Margin = new System.Windows.Forms.Padding(4);
             this.FullNameTxtBox.Name = "FullNameTxtBox";
-            this.FullNameTxtBox.Size = new System.Drawing.Size(305, 21);
-            this.FullNameTxtBox.TabIndex = 7;
+            this.FullNameTxtBox.Size = new System.Drawing.Size(305, 23);
+            this.FullNameTxtBox.TabIndex = 8;
             // 
             // PhoneNumberTxtBox
             // 
+            this.PhoneNumberTxtBox.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.PhoneNumberTxtBox.Location = new System.Drawing.Point(195, 316);
             this.PhoneNumberTxtBox.Margin = new System.Windows.Forms.Padding(4);
             this.PhoneNumberTxtBox.Name = "PhoneNumberTxtBox";
-            this.PhoneNumberTxtBox.Size = new System.Drawing.Size(305, 21);
-            this.PhoneNumberTxtBox.TabIndex = 8;
+            this.PhoneNumberTxtBox.Size = new System.Drawing.Size(305, 23);
+            this.PhoneNumberTxtBox.TabIndex = 9;
             // 
             // SaveButton
             // 
@@ -170,7 +174,7 @@
             this.SaveButton.Margin = new System.Windows.Forms.Padding(4);
             this.SaveButton.Name = "SaveButton";
             this.SaveButton.Size = new System.Drawing.Size(88, 28);
-            this.SaveButton.TabIndex = 9;
+            this.SaveButton.TabIndex = 10;
             this.SaveButton.Text = "Save";
             this.SaveButton.UseVisualStyleBackColor = false;
             this.SaveButton.Click += new System.EventHandler(this.SaveButton_Click);
@@ -184,7 +188,7 @@
             this.UpdateButton.Margin = new System.Windows.Forms.Padding(4);
             this.UpdateButton.Name = "UpdateButton";
             this.UpdateButton.Size = new System.Drawing.Size(88, 28);
-            this.UpdateButton.TabIndex = 10;
+            this.UpdateButton.TabIndex = 11;
             this.UpdateButton.Text = "Update";
             this.UpdateButton.UseVisualStyleBackColor = false;
             this.UpdateButton.Click += new System.EventHandler(this.UpdateButton_Click);
@@ -198,18 +202,19 @@
             this.ClearButton.Margin = new System.Windows.Forms.Padding(4);
             this.ClearButton.Name = "ClearButton";
             this.ClearButton.Size = new System.Drawing.Size(88, 28);
-            this.ClearButton.TabIndex = 11;
+            this.ClearButton.TabIndex = 12;
             this.ClearButton.Text = "Clear";
             this.ClearButton.UseVisualStyleBackColor = false;
             this.ClearButton.Click += new System.EventHandler(this.ClearButton_Click);
             // 
             // RetypePasswordBox
             // 
+            this.RetypePasswordBox.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.RetypePasswordBox.Location = new System.Drawing.Point(195, 230);
             this.RetypePasswordBox.Margin = new System.Windows.Forms.Padding(4);
             this.RetypePasswordBox.Name = "RetypePasswordBox";
-            this.RetypePasswordBox.Size = new System.Drawing.Size(305, 21);
-            this.RetypePasswordBox.TabIndex = 13;
+            this.RetypePasswordBox.Size = new System.Drawing.Size(305, 23);
+            this.RetypePasswordBox.TabIndex = 7;
             // 
             // RetypePasswordLabel
             // 

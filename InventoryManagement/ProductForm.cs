@@ -1,12 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Data.SqlClient;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace InventoryManagement
@@ -31,7 +24,7 @@ namespace InventoryManagement
             while (Dr.Read())
             {
                 i++;
-                dataGridViewProduct.Rows.Add(i, Dr[0].ToString(), Dr[1].ToString(), Dr[2].ToString(), Dr[3].ToString(), Dr[4].ToString());
+                dataGridViewProduct.Rows.Add(i, Dr[0].ToString(), Dr[1].ToString(), Dr[2].ToString(), Dr[3].ToString(), Dr[4].ToString(), Dr[5].ToString());
             }
             Dr.Close();
             connection.Close();
@@ -45,22 +38,36 @@ namespace InventoryManagement
             ProductModule.ShowDialog();
             LoadProduct();
         }
+    
+        //Hand Cursor for Edit and Delete Button Specifically in Data Grid
+        private void dataGridViewProduct_CellMouseMove(object sender, DataGridViewCellMouseEventArgs e)
+        {
+            string colName = dataGridViewProduct.Columns[e.ColumnIndex].Name;
+            if (colName == "Edit" || colName == "Delete") // C# supports two boolean or operators: the single bar | and the double-bar ||. The difference is that | always checks both the left and right conditions, while || only checks the right - side condition if it's necessary (if the left side evaluates to false).
+            {
+                dataGridViewProduct.Cursor = Cursors.Hand;
+            }
+            else
+            {
+                dataGridViewProduct.Cursor = Cursors.Default;
+            }
+        }
         //Edit and Delete Button
         private void dataGridViewProduct_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
             string colName = dataGridViewProduct.Columns[e.ColumnIndex].Name;
             if (colName == "Edit")
             {
-               ProductModule ProductModule = new ProductModule();
-               ProductModule.ProductIDLabel .Text = dataGridViewProduct.Rows[e.RowIndex].Cells[1].Value.ToString();
-               ProductModule.ProductNameTxtBox.Text = dataGridViewProduct.Rows[e.RowIndex].Cells[2].Value.ToString();
-               ProductModule.QuantityTxtBox.Text = dataGridViewProduct.Rows[e.RowIndex].Cells[3].Value.ToString();
-               ProductModule.PriceTxtBox.Text = dataGridViewProduct.Rows[e.RowIndex].Cells[4].Value.ToString();
-               ProductModule.DescriptionTxtBox.Text = dataGridViewProduct.Rows[e.RowIndex].Cells[5].Value.ToString();
-               ProductModule.CategoryTxtBox.Text = dataGridViewProduct.Rows[e.RowIndex].Cells[6].Value.ToString();
-               ProductModule.SaveButton.Enabled = false;
-               ProductModule.UpdateButton.Enabled = true;
-               ProductModule.ShowDialog();
+                ProductModule ProductModule = new ProductModule();
+                ProductModule.ProductIDLabel.Text = dataGridViewProduct.Rows[e.RowIndex].Cells[1].Value.ToString();
+                ProductModule.ProductNameTxtBox.Text = dataGridViewProduct.Rows[e.RowIndex].Cells[2].Value.ToString();
+                ProductModule.QuantityTxtBox.Text = dataGridViewProduct.Rows[e.RowIndex].Cells[3].Value.ToString();
+                ProductModule.PriceTxtBox.Text = dataGridViewProduct.Rows[e.RowIndex].Cells[4].Value.ToString();
+                ProductModule.DescriptionTxtBox.Text = dataGridViewProduct.Rows[e.RowIndex].Cells[5].Value.ToString();
+                ProductModule.comboCategoryBox.Text = dataGridViewProduct.Rows[e.RowIndex].Cells[6].Value.ToString();
+                ProductModule.SaveButton.Enabled = false;
+                ProductModule.UpdateButton.Enabled = true;
+                ProductModule.ShowDialog();
             }
             else if (colName == "Delete")
             {
@@ -74,19 +81,6 @@ namespace InventoryManagement
                 }
             }
             LoadProduct();
-        }
-        //Hand Cursor for Edit and Delete Button Specifically in Data Grid
-        private void dataGridViewProduct_CellMouseMove(object sender, DataGridViewCellMouseEventArgs e)
-        {
-            string colName = dataGridViewProduct.Columns[e.ColumnIndex].Name;
-            if (colName == "Edit" || colName == "Delete") // C# supports two boolean or operators: the single bar | and the double-bar ||. The difference is that | always checks both the left and right conditions, while || only checks the right - side condition if it's necessary (if the left side evaluates to false).
-            {
-                dataGridViewProduct.Cursor = Cursors.Hand;
-            }
-            else
-            {
-                dataGridViewProduct.Cursor = Cursors.Default;
-            }
         }
     }
 }
