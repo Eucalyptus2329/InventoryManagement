@@ -1,7 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace InventoryManagement
@@ -16,8 +13,8 @@ namespace InventoryManagement
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new ProductForm());
-            //Application.Run(new Mainform());
+            //Application.Run(new OrderModule());
+            Application.Run(new Mainform());
         }
     }
 }

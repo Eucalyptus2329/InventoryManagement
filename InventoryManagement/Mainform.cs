@@ -95,7 +95,7 @@ namespace InventoryManagement
 
         private void OrderButton_Click(object sender, EventArgs e)
         {
-            //openChildform(new OrderForm());
+            openChildform(new OrderForm());
         }
     }
 }

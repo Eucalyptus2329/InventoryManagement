@@ -37,7 +37,6 @@ namespace InventoryManagement
             comboCategoryBox.Text = "";
         }
 
-
         //Save Button
         private void SaveButton_Click(object sender, EventArgs e)
         {
@@ -49,7 +48,7 @@ namespace InventoryManagement
                     CM = new SqlCommand(insert, connection);
                     CM.Parameters.AddWithValue("@ProductName", ProductNameTxtBox.Text);
                     CM.Parameters.AddWithValue("@Quantity", Convert.ToInt16(QuantityTxtBox.Text));
-                    CM.Parameters.AddWithValue("@Price", Convert.ToInt16(PriceTxtBox.Text));
+                    CM.Parameters.AddWithValue("@Price", Convert.ToDouble(PriceTxtBox.Text));
                     CM.Parameters.AddWithValue("@Description", DescriptionTxtBox.Text);
                     CM.Parameters.AddWithValue("@ProductCategory", comboCategoryBox.Text);
                     connection.Open();

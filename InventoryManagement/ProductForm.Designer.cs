@@ -43,8 +43,8 @@
             this.Edit = new System.Windows.Forms.DataGridViewImageColumn();
             this.Delete = new System.Windows.Forms.DataGridViewImageColumn();
             this.BottomPanel = new System.Windows.Forms.Panel();
-            this.AddButton = new InventoryManagement.ButtonImageHover();
             this.ProductLabel = new System.Windows.Forms.Label();
+            this.AddButton = new InventoryManagement.ButtonImageHover();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewProduct)).BeginInit();
             this.BottomPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.AddButton)).BeginInit();
@@ -97,7 +97,7 @@
             dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.dataGridViewProduct.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
             this.dataGridViewProduct.RowHeadersVisible = false;
-            this.dataGridViewProduct.Size = new System.Drawing.Size(762, 483);
+            this.dataGridViewProduct.Size = new System.Drawing.Size(762, 440);
             this.dataGridViewProduct.TabIndex = 2;
             this.dataGridViewProduct.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewProduct_CellContentClick);
             this.dataGridViewProduct.CellMouseMove += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dataGridViewProduct_CellMouseMove);
@@ -179,6 +179,17 @@
             this.BottomPanel.Size = new System.Drawing.Size(762, 43);
             this.BottomPanel.TabIndex = 3;
             // 
+            // ProductLabel
+            // 
+            this.ProductLabel.AutoSize = true;
+            this.ProductLabel.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ProductLabel.ForeColor = System.Drawing.Color.White;
+            this.ProductLabel.Location = new System.Drawing.Point(13, 9);
+            this.ProductLabel.Name = "ProductLabel";
+            this.ProductLabel.Size = new System.Drawing.Size(81, 23);
+            this.ProductLabel.TabIndex = 1;
+            this.ProductLabel.Text = "Product";
+            // 
             // AddButton
             // 
             this.AddButton.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -194,24 +205,13 @@
             this.AddButton.TabStop = false;
             this.AddButton.Click += new System.EventHandler(this.AddButton_Click);
             // 
-            // ProductLabel
-            // 
-            this.ProductLabel.AutoSize = true;
-            this.ProductLabel.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ProductLabel.ForeColor = System.Drawing.Color.White;
-            this.ProductLabel.Location = new System.Drawing.Point(13, 9);
-            this.ProductLabel.Name = "ProductLabel";
-            this.ProductLabel.Size = new System.Drawing.Size(81, 23);
-            this.ProductLabel.TabIndex = 1;
-            this.ProductLabel.Text = "Product";
-            // 
             // ProductForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(762, 483);
-            this.Controls.Add(this.BottomPanel);
             this.Controls.Add(this.dataGridViewProduct);
+            this.Controls.Add(this.BottomPanel);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "ProductForm";
             this.Text = "ProductForm";
