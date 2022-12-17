@@ -1,7 +1,7 @@
 # InventoryManagementSystem
 Objective:
--Create flat and modern form.
--Create Side Menu.
+-Create flat and modern form. /n
+-Create Side Menu. /n 
 -Create Method to hide the submenu.
 -Create Method to show the submenu.
 -Customize submenu and buttons.
