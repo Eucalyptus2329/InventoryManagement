@@ -5,12 +5,15 @@ This is a Windows Application Project done in VS 2022 using C# and SQL Server 20
 Main Takeaways:
 - Creation on a Modern UI from using Winforms
     1. Set up childform to display in MainForm dashboard 
-    2. Developed a new tool component into Toolbox using inheritance (Picturebox -> HoverImage )
-    3. Used Pichon software to gather images for application
+    2. Learned how to implement events, manipulate objects' properties
+    3. Developed a new tool component into Toolbox using inheritance (Picturebox -> ButtonImageHover)
+    4. Used Pichon software to gather images for application
+    5. Troubleshoot in Form's Designer page
 - Designed and programmed SQL Server databases using SQLCommand and SqlConnection
-    1. Utilized CRUD (Create, Read, Update, and Delete) Operations for interface between application and SQL databases
-    2. Manipulated Data grid View to return data from databases
-    3. Will incorporate Dapper in future projects
+    1. Utilized Visual Studio's SQL Server Object Explorer, Server Explorer, and Data Tool Operations for SQL Database Schema Creation
+    2. Performed CRUD (Create, Read, Update, and Delete) Operations for interface between application and SQL databases
+    3. Manipulated Data grid View to return data from databases
+    4. Will incorporate Dapper in future projects
 
 
 
