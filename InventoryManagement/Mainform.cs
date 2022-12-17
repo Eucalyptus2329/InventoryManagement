@@ -23,7 +23,7 @@ namespace InventoryManagement
             FormPanel.Controls.Add(childform);
             FormPanel.Tag= childform;
             childform.BringToFront();  // BringToFront() -> front of the z-order
-            childform.Show();
+            childform.Show(); 
         }
         //Add Background Transition When Hovering 
         private void ProductButton_MouseHover(object sender, EventArgs e)
@@ -78,24 +78,44 @@ namespace InventoryManagement
         private void UserButton_Click(object sender, EventArgs e)
         {
             openChildform(new UserForm());
+            DashboardLabel.Text = "User";
         }
         private void CustomerButton_Click(object sender, EventArgs e)
         {
             openChildform(new CustomerForm());
+            DashboardLabel.Text = "Customer";
         }
         private void ProductButton_Click(object sender, EventArgs e)
         {
             openChildform(new ProductForm());
+            DashboardLabel.Text = "Product";
         }
 
         private void CategoriesButton_Click(object sender, EventArgs e)
         {
             openChildform(new CategoryForm());
+            DashboardLabel.Text = "Categories";
         }
 
         private void OrderButton_Click(object sender, EventArgs e)
         {
             openChildform(new OrderForm());
+            DashboardLabel.Text = "Order";
+        }
+
+        private void LogOutButton_Click(object sender, EventArgs e)
+        {
+            if (MessageBox.Show("Are you sure you want to log out?", "Log Out", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+            {
+                Close();
+                openChildform(new LoginForm());
+            }
+           
+        }
+
+        private void TitleLabel_Click(object sender, EventArgs e)
+        {
+         
         }
     }
 }

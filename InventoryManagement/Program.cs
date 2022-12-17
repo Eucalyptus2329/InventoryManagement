@@ -13,8 +13,16 @@ namespace InventoryManagement
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            //Application.Run(new OrderModule());
-            Application.Run(new Mainform());
+
+            LoginForm loginform = new LoginForm();
+            if(loginform.ShowDialog() == DialogResult.OK)
+            {
+                Application.Run(new LoginForm());
+            }
+            else
+            {
+                Application.Exit();
+            }
         }
     }
 }

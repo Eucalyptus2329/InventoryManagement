@@ -39,8 +39,8 @@
             this.Edit = new System.Windows.Forms.DataGridViewImageColumn();
             this.Delete = new System.Windows.Forms.DataGridViewImageColumn();
             this.BottomPanel = new System.Windows.Forms.Panel();
-            this.CategoriesLabel = new System.Windows.Forms.Label();
             this.AddButton = new InventoryManagement.ButtonImageHover();
+            this.CategoriesLabel = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewCategory)).BeginInit();
             this.BottomPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.AddButton)).BeginInit();
@@ -79,6 +79,7 @@
             this.dataGridViewCategory.EnableHeadersVisualStyles = false;
             this.dataGridViewCategory.GridColor = System.Drawing.Color.Gray;
             this.dataGridViewCategory.Location = new System.Drawing.Point(0, 0);
+            this.dataGridViewCategory.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.dataGridViewCategory.Name = "dataGridViewCategory";
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control;
@@ -89,7 +90,7 @@
             dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.dataGridViewCategory.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
             this.dataGridViewCategory.RowHeadersVisible = false;
-            this.dataGridViewCategory.Size = new System.Drawing.Size(778, 522);
+            this.dataGridViewCategory.Size = new System.Drawing.Size(1037, 642);
             this.dataGridViewCategory.TabIndex = 2;
             this.dataGridViewCategory.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewCategories_CellContentClick);
             this.dataGridViewCategory.CellMouseMove += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dataGridViewCategory_CellMouseMove);
@@ -138,21 +139,11 @@
             this.BottomPanel.Controls.Add(this.CategoriesLabel);
             this.BottomPanel.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.BottomPanel.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BottomPanel.Location = new System.Drawing.Point(0, 479);
+            this.BottomPanel.Location = new System.Drawing.Point(0, 589);
+            this.BottomPanel.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.BottomPanel.Name = "BottomPanel";
-            this.BottomPanel.Size = new System.Drawing.Size(778, 43);
+            this.BottomPanel.Size = new System.Drawing.Size(1037, 53);
             this.BottomPanel.TabIndex = 3;
-            // 
-            // CategoriesLabel
-            // 
-            this.CategoriesLabel.AutoSize = true;
-            this.CategoriesLabel.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CategoriesLabel.ForeColor = System.Drawing.Color.White;
-            this.CategoriesLabel.Location = new System.Drawing.Point(13, 9);
-            this.CategoriesLabel.Name = "CategoriesLabel";
-            this.CategoriesLabel.Size = new System.Drawing.Size(112, 23);
-            this.CategoriesLabel.TabIndex = 1;
-            this.CategoriesLabel.Text = "Categories";
             // 
             // AddButton
             // 
@@ -161,22 +152,37 @@
             this.AddButton.HoverImage = ((System.Drawing.Image)(resources.GetObject("AddButton.HoverImage")));
             this.AddButton.Image = ((System.Drawing.Image)(resources.GetObject("AddButton.Image")));
             this.AddButton.ImageNormal = ((System.Drawing.Image)(resources.GetObject("AddButton.ImageNormal")));
-            this.AddButton.Location = new System.Drawing.Point(753, 0);
+            this.AddButton.Location = new System.Drawing.Point(1004, 0);
+            this.AddButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.AddButton.Name = "AddButton";
-            this.AddButton.Size = new System.Drawing.Size(25, 43);
+            this.AddButton.Size = new System.Drawing.Size(33, 53);
             this.AddButton.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.AddButton.TabIndex = 2;
             this.AddButton.TabStop = false;
             this.AddButton.Click += new System.EventHandler(this.AddButton_Click);
             // 
+            // CategoriesLabel
+            // 
+            this.CategoriesLabel.AutoSize = true;
+            this.CategoriesLabel.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CategoriesLabel.ForeColor = System.Drawing.Color.White;
+            this.CategoriesLabel.Location = new System.Drawing.Point(17, 11);
+            this.CategoriesLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.CategoriesLabel.Name = "CategoriesLabel";
+            this.CategoriesLabel.Size = new System.Drawing.Size(112, 23);
+            this.CategoriesLabel.TabIndex = 1;
+            this.CategoriesLabel.Text = "Categories";
+            // 
             // CategoryForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(778, 522);
+            this.ClientSize = new System.Drawing.Size(1037, 642);
             this.Controls.Add(this.BottomPanel);
             this.Controls.Add(this.dataGridViewCategory);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "CategoryForm";
             this.Text = "CategoriesForm";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewCategory)).EndInit();

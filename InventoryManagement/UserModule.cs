@@ -3,6 +3,7 @@ using System.Data.SqlClient;
 using System.Windows.Forms;
 
 
+
 namespace InventoryManagement
 {
     public partial class UserModule : Form 
@@ -23,7 +24,7 @@ namespace InventoryManagement
             FullNameTxtBox.Clear();
             PhoneNumberTxtBox.Clear();
         }
-
+        
         //Close Window Button
         private void CloseWindowButton_Click(object sender, EventArgs e)
         {
@@ -41,16 +42,16 @@ namespace InventoryManagement
         {
             try
             {
-                if(PasswordTxtBox.Text != RetypePasswordBox.Text) 
+                if (PasswordTxtBox.Text != RetypePasswordBox.Text)
                 {
                     MessageBox.Show("Passwords do not match", "Retype Password", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     return;
                 }
-                if(MessageBox.Show("Are you sure you want to save this User?","Saving Record",MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+                if (MessageBox.Show("Are you sure you want to save this User?","Saving Record",MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
                 {
                     string insert = "insert into UserFormDb(Username,Password,FullName,PhoneNumber)values(@Username,@Password,@FullName,@PhoneNumber)";
                     CM = new SqlCommand(insert,connection);
-                    CM.Parameters.AddWithValue("@Username", FullNameTxtBox.Text);
+                    CM.Parameters.AddWithValue("@Username", UsernameTxtBox.Text);
                     CM.Parameters.AddWithValue("@Password", PasswordTxtBox.Text);
                     CM.Parameters.AddWithValue("@FullName",FullNameTxtBox.Text);
                     CM.Parameters.AddWithValue("@PhoneNumber", PhoneNumberTxtBox.Text);
@@ -58,15 +59,13 @@ namespace InventoryManagement
                     CM.ExecuteNonQuery();
                     connection.Close();
                     MessageBox.Show("User has been successfully saved");
-                    Clear();
-                    
+                    Clear(); 
                 }
             }
             catch(Exception ex) 
             {
                 MessageBox.Show(ex.Message);
             }
-            
         }
 
         //Update Button 

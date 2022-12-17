@@ -43,8 +43,8 @@
             this.Edit = new System.Windows.Forms.DataGridViewImageColumn();
             this.Delete = new System.Windows.Forms.DataGridViewImageColumn();
             this.BottomPanel = new System.Windows.Forms.Panel();
-            this.ProductLabel = new System.Windows.Forms.Label();
             this.AddButton = new InventoryManagement.ButtonImageHover();
+            this.ProductLabel = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewProduct)).BeginInit();
             this.BottomPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.AddButton)).BeginInit();
@@ -87,6 +87,7 @@
             this.dataGridViewProduct.EnableHeadersVisualStyles = false;
             this.dataGridViewProduct.GridColor = System.Drawing.Color.Gray;
             this.dataGridViewProduct.Location = new System.Drawing.Point(0, 0);
+            this.dataGridViewProduct.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.dataGridViewProduct.Name = "dataGridViewProduct";
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control;
@@ -97,7 +98,7 @@
             dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.dataGridViewProduct.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
             this.dataGridViewProduct.RowHeadersVisible = false;
-            this.dataGridViewProduct.Size = new System.Drawing.Size(762, 440);
+            this.dataGridViewProduct.Size = new System.Drawing.Size(1016, 541);
             this.dataGridViewProduct.TabIndex = 2;
             this.dataGridViewProduct.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewProduct_CellContentClick);
             this.dataGridViewProduct.CellMouseMove += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dataGridViewProduct_CellMouseMove);
@@ -174,21 +175,11 @@
             this.BottomPanel.Controls.Add(this.ProductLabel);
             this.BottomPanel.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.BottomPanel.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BottomPanel.Location = new System.Drawing.Point(0, 440);
+            this.BottomPanel.Location = new System.Drawing.Point(0, 541);
+            this.BottomPanel.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.BottomPanel.Name = "BottomPanel";
-            this.BottomPanel.Size = new System.Drawing.Size(762, 43);
+            this.BottomPanel.Size = new System.Drawing.Size(1016, 53);
             this.BottomPanel.TabIndex = 3;
-            // 
-            // ProductLabel
-            // 
-            this.ProductLabel.AutoSize = true;
-            this.ProductLabel.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ProductLabel.ForeColor = System.Drawing.Color.White;
-            this.ProductLabel.Location = new System.Drawing.Point(13, 9);
-            this.ProductLabel.Name = "ProductLabel";
-            this.ProductLabel.Size = new System.Drawing.Size(81, 23);
-            this.ProductLabel.TabIndex = 1;
-            this.ProductLabel.Text = "Product";
             // 
             // AddButton
             // 
@@ -197,22 +188,37 @@
             this.AddButton.HoverImage = ((System.Drawing.Image)(resources.GetObject("AddButton.HoverImage")));
             this.AddButton.Image = ((System.Drawing.Image)(resources.GetObject("AddButton.Image")));
             this.AddButton.ImageNormal = ((System.Drawing.Image)(resources.GetObject("AddButton.ImageNormal")));
-            this.AddButton.Location = new System.Drawing.Point(737, 0);
+            this.AddButton.Location = new System.Drawing.Point(983, 0);
+            this.AddButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.AddButton.Name = "AddButton";
-            this.AddButton.Size = new System.Drawing.Size(25, 43);
+            this.AddButton.Size = new System.Drawing.Size(33, 53);
             this.AddButton.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.AddButton.TabIndex = 2;
             this.AddButton.TabStop = false;
             this.AddButton.Click += new System.EventHandler(this.AddButton_Click);
             // 
+            // ProductLabel
+            // 
+            this.ProductLabel.AutoSize = true;
+            this.ProductLabel.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ProductLabel.ForeColor = System.Drawing.Color.White;
+            this.ProductLabel.Location = new System.Drawing.Point(17, 11);
+            this.ProductLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.ProductLabel.Name = "ProductLabel";
+            this.ProductLabel.Size = new System.Drawing.Size(81, 23);
+            this.ProductLabel.TabIndex = 1;
+            this.ProductLabel.Text = "Product";
+            // 
             // ProductForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(762, 483);
+            this.ClientSize = new System.Drawing.Size(1016, 594);
             this.Controls.Add(this.dataGridViewProduct);
             this.Controls.Add(this.BottomPanel);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "ProductForm";
             this.Text = "ProductForm";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewProduct)).EndInit();

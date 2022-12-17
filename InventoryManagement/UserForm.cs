@@ -38,7 +38,7 @@ namespace InventoryManagement
             userModule.SaveButton.Enabled = true;
             userModule.UpdateButton.Enabled = false;
             userModule.ShowDialog();
-
+            LoadUser();
         }
 
         //Edit and Delete Button
@@ -52,10 +52,8 @@ namespace InventoryManagement
                 userModule.PasswordTxtBox.Text = dataGridView.Rows[e.RowIndex].Cells[2].Value.ToString();
                 userModule.FullNameTxtBox.Text = dataGridView.Rows[e.RowIndex].Cells[3].Value.ToString();
                 userModule.PhoneNumberTxtBox.Text = dataGridView.Rows[e.RowIndex].Cells[4].Value.ToString();
-
                 userModule.SaveButton.Enabled = false;
                 userModule.UpdateButton.Enabled = true;
-                userModule.UsernameTxtBox.Enabled = false;
                 userModule.ShowDialog();
             }
             else if(colName == "Delete") 
