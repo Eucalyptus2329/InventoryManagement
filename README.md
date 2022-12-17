@@ -1,5 +1,20 @@
 # InventoryManagementSystem
-Objective:
+## Summary
+This is a Windows Application Project done in VS 2022 using C# and SQL Server 2019. The goal for this project was to develop an Inventory Management System that is functional and meets all the objectives listed below. 
+
+Main Takeaways:
+- Creation on a Modern UI from using Winforms
+    1. Set up childform to display in MainForm dashboard 
+    2. Developed a new tool component into Toolbox using inheritance (Picturebox -> HoverImage )
+    3. Used Pichon software to gather images for application
+- Designed and programmed SQL Server databases using SQLCommand and SqlConnection
+    1. Utilized CRUD (Create, Read, Update, and Delete) Operations for interface between application and SQL databases
+    2. Manipulated Data grid View to return data from databases
+    3. Will incorporate Dapper in future projects
+
+
+
+Objective:<br>
 -Create flat and modern form. <br>
 -Create Side Menu. <br>
 -Create Method to hide the submenu. <br>
