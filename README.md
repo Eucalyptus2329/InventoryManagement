@@ -2,17 +2,17 @@
 Objective:
 -Create flat and modern form. <br>
 -Create Side Menu. <br>
--Create Method to hide the submenu.
--Create Method to show the submenu.
--Customize submenu and buttons.
--How to show and hide drop-down submenus.
--Open child forms in a panel.
--Responsive or adaptable user interface or user controls.
--Manage Product(insert form, update and Delete)
--Manage Category(insert form, update and Delete)
--Manage Customer(insert form, update and Delete)
--Manage User (insert form, update and Delete)
--Manage Order(insert form, update and Delete)
+-Create Method to hide the submenu. <br>
+-Create Method to show the submenu. <br>
+-Customize submenu and buttons. <br>
+-How to show and hide drop-down submenus. <br>
+-Open child forms in a panel. <br>
+-Responsive or adaptable user interface or user controls. <br>
+-Manage Product(insert form, update and Delete) <br>
+-Manage Category(insert form, update and Delete) <br>
+-Manage Customer(insert form, update and Delete) <br>
+-Manage User (insert form, update and Delete) <br>
+-Manage Order(insert form, update and Delete)<br>
 https://www.youtube.com/watch?v=WoN8-rCY5o8
 
 ## Login Page
